@@ -11,6 +11,9 @@ var players = require('./routes/players');
 
 
 var app = express();
+app.get('/', function(req, res) {
+  res.send('Test');
+})
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -23,6 +26,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 app.use('/', routes);
 app.use('/users', users);
