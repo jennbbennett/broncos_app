@@ -10,7 +10,7 @@ var users = require('./routes/users');
 var players = require('./routes/players');
 
 
-// var app = express();
+var app = express();
 // app.get('/', function(req, res) {
 //   res.send('Test');
 // })
