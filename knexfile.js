@@ -7,4 +7,8 @@ module.exports = {
     connection: 'postgres://localhost/broncos'
   },
 
+  production:{
+    client: 'pg',
+    connection: process.env.DATABASE_URL
+  }
 };
