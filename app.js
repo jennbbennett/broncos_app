@@ -10,10 +10,10 @@ var users = require('./routes/users');
 var players = require('./routes/players');
 
 
-var app = express();
-app.get('/', function(req, res) {
-  res.send('Test');
-})
+// var app = express();
+// app.get('/', function(req, res) {
+//   res.send('Test');
+// })
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
